@@ -1,0 +1,34 @@
+{
+  "name": "nadfun-volume-bot",
+  "version": "1.0.0",
+  "description": "Volume bot for nadfun token launchpad on Monad Mainnet",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "generate-wallets": "ts-node src/scripts/generateWallets.ts"
+  },
+  "keywords": [
+    "monad",
+    "nadfun",
+    "volume-bot",
+    "trading"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^6.9.0",
+    "dotenv": "^16.3.1",
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.5",
+    "axios": "^1.6.2",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/inquirer": "^9.0.7",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2"
+  }
+}
